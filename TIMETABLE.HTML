@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        /* General Page Styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f0f4f8;
+            color: #333;
+            padding: 30px 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Header Section */
+        header {
+            text-align: center;
+            margin-bottom: 25px;
+            width: 100%;
+        }
+
+        header h1 {
+            color: #1e3c72;
+            font-size: 2.2rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+        }
+
+        header hr {
+            border: none;
+            height: 4px;
+            background: linear-gradient(90deg, #1e3c72, #2a5298);
+            width: 100px;
+            margin: 0 auto;
+            border-radius: 2px;
+        }
+
+        /* Main Container & Table Setup */
+        main {
+            width: 100%;
+            max-width: 1100px;
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+            overflow-x: auto;
+            /* Responsive scrollbar for mobile */
+            padding: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: center;
+            min-width: 850px;
+        }
+
+        /* Table Cells & Borders */
+        th,
+        td {
+            padding: 12px 10px;
+            font-size: 0.95rem;
+            border: 1px solid #e0e0e0;
+        }
+
+        /* Top Header Row (Day/Period, I, II...) */
+        thead tr:first-child {
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: #ffffff;
+        }
+
+        thead tr:first-child th {
+            font-weight: 600;
+            font-size: 1.05rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            border: none;
+        }
+
+        /* Days Column (MONDAY, TUESDAY...) */
+        tbody td:first-child,
+        thead tr:not(:first-child) td:first-child {
+            background-color: #eef2f7;
+            color: #1e3c72;
+            font-weight: 700;
+            font-size: 0.95rem;
+        }
+
+        /* Alternating Row Colors */
+        tr:nth-child(even) {
+            background-color: #f8fafc;
+        }
+
+        /* Row Hover Effect */
+        tr:hover {
+            background-color: #e2e8f0;
+            transition: background-color 0.2s ease-in-out;
+        }
+
+        /* Footer Section */
+        footer {
+            margin-top: 30px;
+            text-align: center;
+            color: #1c0808;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            font-weight: 500;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <center>
+            <h1><b><u>Time Table</u></b></h1>
+        </center>
+        <hr>
+    </header>
+    <main>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th><B>Day/Period</B></th>
+                    <B>
+                        <th>I</th>
+                        <th>II</th>
+                        <th>III</th>
+                        <th>IV</th>
+                        <th>--1/2_HR--</th>
+                        <th>V</th>
+                        <th>VI</th>
+                        <th>VII</th>
+                        <th>VIII</th>
+                    </B>
+                </tr>
+                <tr>
+                    <TD><B>MONDAY</B></TD>
+<td>Mathematics</td>
+                    <td>Mechanical</td>
+                    <td>Design thinking</td>
+                    <td>C++</td>
+                    <td><b>B</b></td>
+                    <td>Electronics</td>
+                    <td>Web desiging</td>
+                    <td>Soft skill</td>
+                    <td>LAB</td>
+                </tr>
+                <tr>
+                    <TD><B>TUESDAY</B></TD>
+                    <td>Mathematics</td>
+                    <td>C++</td>
+                    <td>Mechanical</td>
+                    <td>Design thinking</td>
+                    <td><b>R</b></td>
+                    <td>Electronics</td>
+                    <td>Soft skill</td>
+                    <td>Web desiging</td>
+                    <td>LAB</td>
+                </tr>
+                <tr>
+                    <TD><B>WEDNESDAY</B></TD>
+                    <td>Web desiging</td>
+                    <td>Soft skill</td>
+                    <td>C++</td>
+                    <td>Mechanical</td>
+                    <td><b>E</b></td>
+                    <td>Design thinking</td>
+                    <td>Electronics</td>
+                    <td>Mathematics</td>
+                    <td>LAB</td>
+                </tr>
+                <tr>
+                    <TD><B>THURSDAY</B></TD>
+                    <td>C++</td>
+                    <td>Electronics</td>
+                    <td>Design thinking</td>
+                    <td>Soft skill</td>
+                    <td><b>A</b></td>
+                    <td>LAB</td>
+                    <td>Mathematics</td>
+                    <td>Web desiging</td>
+                    <td>Mechanical</td>
+                </tr>
+                <tr>
+                    <TD><B>FRIDAY</B></TD>
+                    <td>Mechanical</td>
+                    <td>Design thinking</td>
+                    <td>C++</td>
+                    <td>Electronics</td>
+                    <td><b>K</b></td>
+                    <td>Soft skill</td>
+                    <td>Mathematics</td>
+                    <td>Web desiging</td>
+                    <td>LAB</td>
+                </tr>
+            </thead>
+        </table>
+    </main>
+    <footer>
+        COLLEGE TIME TABLE.
+        <br>
+        KSHITIJ SHUKLA .
+        <br>
+        ThanksYou.
+    </footer>
+</body>
+
+</html>
